@@ -117,6 +117,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+django_heroku.settings(locals())
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
@@ -124,4 +125,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.django.CompressedManifestStaticFilesStorage'
 
-django_heroku.settings(locals())
+
