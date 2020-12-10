@@ -1,0 +1,89 @@
+{% extends "network/layout.html" %}
+
+{% load static %}
+{% load tz %}
+
+{% block body %}
+    <div id="about_user">
+        <h3>About {{target_user.username}}</h3>
+        <li>Total Followers: {{ total_followers }}</li>
+        <li>Total Following: {{ total_following }}</li>
+        <br>
+
+        {% if user.is_authenticated %}
+            {% if user.username != target_user.username %}
+                {% if is_follower %}
+                    <button id="followUser" style="display: none;" class="submit_post">Follow</button>
+                    <button id="unfollowUser" class="submit_post">Unfollow</button>
+                {% else %}
+                    <button id="followUser" class="submit_post">Follow</button>
+                    <button id="unfollowUser" style="display: none;" class="submit_post">Unfollow</button>
+                {% endif %}
+            {% endif %}
+        {% endif %}
+
+    </div>
+
+    <hr>
+
+    <div id = "postArea">
+        <h3>Posts by {{ target_user.username }}:</h3><br>
+        {% if page_obj %}
+
+        {% for post in page_obj %}
+        <div id="post_{{ post.id }}" class='post_container'>
+            <a href="{% url 'userProfile' username=post.user.username %}"><h3>{{ post.user.username }}</h3></a>
+            
+            {% if post.user == current_user %}
+                <a href='#' class="editLink">Edit</a>
+            {% endif %}
+
+            <p class="content">{{ post.content }}</p>
+            <img src="{% static 'network/heart.png' %}" style="height: 20px; width: 20px; margin-top: -5px">
+            <text class="total_likes">{{ post.total_likes }}</text>
+
+            {% if current_user.is_authenticated %}
+                {% if current_user in post.liked_by.all %}
+                    <button class="likePost" style="display: none;">Like</button>
+                    <button class="dislikePost" style="display: block;">Dislike</button>
+                {% else %}
+                    <button class="likePost" style="display: block;">Like</button>
+                    <button class="dislikePost" style="display: none;">Dislike</button>
+                {% endif %}
+            {% endif %}
+
+            <time class="time" style="display: block;">{{ post.timestamp|localtime }}</time>
+        </div>
+    {% endfor %}
+
+        {% else %}
+            <text>No posts have been made.</text>
+
+        {% endif %}
+
+    </div>
+
+    <div class="pagination">
+        <span class="step-links">
+            <span class="prev">
+                {% if page_obj.has_previous %}
+                    <a href="?page=1">&laquo; first</a>
+                    <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+            </span>
+
+            <span class="current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+            </span>
+    
+            <span class="next">
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}">next</a>
+                    <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                {% endif %}
+            </span>
+        </span>
+    </div>
+
+    <hr>
+{% endblock %}

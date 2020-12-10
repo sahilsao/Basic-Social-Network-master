@@ -1,0 +1,126 @@
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.pageHeading {
+    margin: 10px;
+}
+
+#newPost {
+    padding: 20px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 3px;
+    margin: 10px;
+}
+
+#newPost textarea{
+    width: 100%;
+}
+
+.submit_post {
+    border: 1px solid #3685fd;
+    color: rgb(255, 255, 255);
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #3685fd;
+    border-radius: 4px;
+}
+
+.submit_post:disabled{
+    border: 1px solid #abccff;
+    color: rgb(255, 255, 255);
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #abccff;
+    border-radius: 4px;
+}
+
+hr {
+    margin: 30px 10px 30px 10px;
+}
+
+.post_container {
+    padding: 20px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 3px;
+    margin: 10px;
+}
+
+#about_user {
+    margin: 10px;
+    border: 1px solid rgb(211, 211, 211);
+    background-color: rgb(235, 235, 235);
+    padding: 20px;
+}
+
+#postArea {
+    margin: 10px;
+    padding: 20px;
+}
+
+.time {
+    color: rgb(155, 155, 155);
+}
+
+.content {
+    margin-top: 10px;
+    border-top: 1px solid rgb(211, 211, 211);
+    padding-top: 10px;
+}
+
+.pagination {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.step-links{
+    width: 340px;
+    display: flex;
+    flex-direction: row;
+}
+
+.prev{
+    flex: 34%;
+}
+
+.current{
+    flex: 28%;
+}
+
+.next{
+    flex: 37%;
+}
+
+.likePost {
+    border: 1px solid #19ca40;
+    color: rgb(0, 0, 0);
+    padding: 4px;
+    padding-left: 17.5px;
+    padding-right: 17.5px;
+    background-color: #19ca40;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dislikePost {
+    border: 1px solid #fa2626;
+    color: rgb(255, 255, 255);
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #fa2626;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.post_container .updateText{
+    margin-top: 10px;
+    width: 100%;
+}
