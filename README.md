@@ -8,7 +8,7 @@ ___
 - Visitors cannot interact with posts without loggin in.
 - Clicking the name of a user from any post takes us to their profile page.
 <kbd>
-  <img src="https://github.com/sahilsao/Basic-Social-Network-master/blob/master/documents/img1.jpg">
+  <img src="https://github.com/sahilsao/Basic-Social-Network-master/blob/master/documents/img1.JPG">
 </kbd>
 
 - Upon logging in the index page allows the users to create a new post, like posts and dislike previously liked posts.
@@ -22,13 +22,13 @@ ___
 - If visiting a profile other than our own, we see the 'follow' button on this page.
 - Below the info are all the posts made by that user.
 <kbd>
-  <img src="https://github.com/sahilsao/Basic-Social-Network-master/blob/master/documents/img3.jpg">
+  <img src="https://github.com/sahilsao/Basic-Social-Network-master/blob/master/documents/img3.JPG">
 </kbd>
 
 ### Following Page:
 - Loads all the posts by people that the current user is following.
 <kbd>
-  <img src="https://github.com/sahilsao/Basic-Social-Network-master/blob/master/documents/img4.jpg">
+  <img src="https://github.com/sahilsao/Basic-Social-Network-master/blob/master/documents/img4.JDP">
 </kbd>
 
 ___
