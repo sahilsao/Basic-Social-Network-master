@@ -72,7 +72,6 @@ pyrsistent==0.17.3
 python-dateutil==2.8.1
 python-openid==2.2.5
 pytz==2018.5
-pywin32==300
 pywinpty==0.5.7
 pyzmq==20.0.0
 requests==2.19.1
