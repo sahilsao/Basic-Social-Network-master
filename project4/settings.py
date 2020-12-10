@@ -55,7 +55,7 @@ ROOT_URLCONF = 'project4.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'network/templates/network')],
+        'DIRS': [os.path.join(BASE_DIR,'/templates/network')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'network/static/network')
+    os.path.join(BASE_DIR, '/static/network')
 ]
 
 
