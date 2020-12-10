@@ -16,7 +16,7 @@
     <h1 class="pageHeading">All Posts</h1>
     
     {% for post in page_obj %}
-        <div id="post_{{ post.id }}" class='post_container'>
+        <div id="post_{{ post.id }}" class='post_container-fluid'>
             <a href="{% url 'userProfile' username=post.user.username %}"><h3>{{ post.user.username }}</h3></a>
             
             {% if post.user == current_user %}
