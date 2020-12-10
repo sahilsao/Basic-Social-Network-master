@@ -51,6 +51,7 @@ hr {
     border: 1px solid rgb(202, 202, 202);
     border-radius: 3px;
     margin: 10px;
+    margin-right: 10px;
 }
 
 #about_user {
