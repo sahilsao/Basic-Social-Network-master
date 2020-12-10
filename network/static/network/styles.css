@@ -47,11 +47,9 @@ hr {
 
 .post_container {
     padding: 20px;
-    width: 100%;
     border: 1px solid rgb(202, 202, 202);
     border-radius: 3px;
     margin: 10px;
-    margin-right: 10px;
 }
 
 #about_user {
@@ -127,5 +125,4 @@ hr {
 
 .post_container .updateText{
     margin-top: 10px;
-    width: 100%;
 }
