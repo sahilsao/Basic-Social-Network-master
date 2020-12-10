@@ -1,5 +1,5 @@
 html, body {
-    width: fit-content;
+    width: 100;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -47,6 +47,7 @@ hr {
 
 .post_container {
     padding: 20px;
+    width: fit-content;
     border: 1px solid rgb(202, 202, 202);
     border-radius: 3px;
     margin: 10px;
