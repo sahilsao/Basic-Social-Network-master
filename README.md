@@ -28,7 +28,7 @@ ___
 ### Following Page:
 - Loads all the posts by people that the current user is following.
 <kbd>
-  <img src="https://github.com/sahilsao/Basic-Social-Network-master/blob/master/documents/img4.JDP">
+  <img src="https://github.com/sahilsao/Basic-Social-Network-master/blob/master/documents/img4.JPG">
 </kbd>
 
 ___
