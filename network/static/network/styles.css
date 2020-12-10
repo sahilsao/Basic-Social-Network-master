@@ -1,6 +1,5 @@
 body {
-    width: auto;
-    height: auto;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
 }
