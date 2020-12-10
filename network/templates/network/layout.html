@@ -9,7 +9,8 @@
         <script src="{% static 'network/network.js' %}"></script>
     </head>
     <body>
-      <div class="container-fluid">
+   <header class="bg-light sticky-top">
+      <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="{% url 'index' %}">Social Network</a>
           
@@ -47,5 +48,6 @@
             {% endblock %}
         </div>
      </div>
+    </header>
     </body>
 </html>
