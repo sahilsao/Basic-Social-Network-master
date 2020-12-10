@@ -131,8 +131,5 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, '/static/network')
 ]
 
-
-os.path.join(BASE_DIR, 'build/static')
-]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 CORS_ORIGIN_ALLOW_ALL = True
