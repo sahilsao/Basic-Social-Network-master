@@ -12,6 +12,7 @@ html, body {
 
 #newPost {
     padding: 20px;
+    padding-right: 20px;
     border: 1px solid rgb(202, 202, 202);
     border-radius: 3px;
     margin: 10px;
@@ -47,6 +48,7 @@ hr {
 
 .post_container {
     padding: 20px;
+    padding-right: 20px;
     border: 1px solid rgb(202, 202, 202);
     border-radius: 3px;
     margin: 10px;
@@ -125,4 +127,5 @@ hr {
 
 .post_container .updateText{
     margin-top: 10px;
+
 }
